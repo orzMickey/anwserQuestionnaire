@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>智能客服</title>
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="answerQuestionCss/questionAi.css">
+</head>
+<body>
+<div>
+        <h1 id="question_name" class="validate-caption" style="margin: 50px">智能客服</h1>
+        <ul>
+            <li>
+                <label for="UserInput" class="icon user-icon"></label>
+                <input name="UserInput" id="UserInput" placeholder="请输入问题"  type="text">
+                <input type="hidden" name="hfUserName" id="hfUserName">
+                <button name="answerButton" id="quesButton" style="color:White" onclick="submitQuestion()">提交问题</button>
+            </li>
+        </ul>
+</div>
+<div class="Aidiv" id="getAnswer">
+
+</div>
+<script src="../plugins/jQuery/jquery-1.12.4.min.js"></script>
+<script src="../js/zhezhao.js?v=3" type="text/javascript"></script>
+<script src="../plugins/layer/layer.js"></script>
+<script src="../plugins/cookie/jquery.cookie.js"></script>
+<script src="../common/common.js"></script>
+<script type="text/javascript" src="answerQuestionJs/questionAi.js"></script>
+</body>
+</html>
